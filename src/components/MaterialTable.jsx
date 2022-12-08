@@ -216,13 +216,13 @@ const EnhancedTable = props => {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Paper sx={{ width: '100%' }}>
+      <Paper sx={{ width: '100%', borderRadius: 0 }} elevation={3}>
         <EnhancedTableToolbar
           title={title}
           handleAddNew={handleAddNew}
           numSelected={selected.length}
         />
-        <TableContainer sx={{height: 'calc(100% - 64px - 52px)'}}>
+        <TableContainer sx={{ height: 'calc(100% - 64px - 52px)' }}>
           <Table
             sx={{ minWidth: 750, height: data ? 'initial' : '100%' }}
             size="small"

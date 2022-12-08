@@ -13,7 +13,9 @@ const HeaderDetails = () => {
       alignSelf: 'center',
       boxSizing: 'border-box',
       px: isMobile ? 0 : 16,
-      textAlign: isMobile ? 'center' : 'right'
+      textAlign: isMobile ? 'center' : 'right',
+      zIndex: 0,
+      pointerEvents: 'none'
     }}>
       <Typography
         component="h1"
